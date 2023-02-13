@@ -1,10 +1,12 @@
 # NEAR REST API SERVER FOR Connect IoT
 
-> ### This repository is a specific implementation for the Connect IoT project based on the official [NEAR REST API SERVER repository](https://github.com/near-examples/near-api-rest-server) following its license, so if you use this code, keep in mind to check its protection.
+> ### This repository is a specific implementation for the Connect IoT project based on the official [NEAR REST API SERVER repository](https://github.com/near-examples/near-api-rest-server) following its license, so if you use this code, keep in mind to check its protection. **NOTE:** RUNNING THE API MUST BE DONE ON A RASPBERRY PI.
 
 ---
 
 ## Overview
+
+When consuming the API, it is important to know that the route is **/call** and the HTTP method that is used is **POST** type.
 
 _Click on a route for more information and examples_
 
@@ -21,7 +23,7 @@ _Click on a route for more information and examples_
 - [Node.js](https://nodejs.org/en/download/package-manager/)
 - [npm](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/getting-started/install)
 - API request tool such as [Postman](https://www.postman.com/downloads/)
-- Crear archivo .env conteniendo el id del contrato:
+- Create a file .env with the ID of the smart contract:
 ```
 NEAR_CONTRACT_ID=dev-1659666583036-94152895119798
 ```
@@ -33,7 +35,7 @@ NEAR_CONTRACT_ID=dev-1659666583036-94152895119798
 1. Clone repository
 
 ```bash
-https://github.com/paul-cruz/Connect-IoT-API.git
+https://github.com/MexbaliaMX/ConnectIoT-API.git
 ```
 
 2. Install dependencies
@@ -84,10 +86,10 @@ node app
 - **`set_device_metadata_param`**
 - **`get_device_metadata_param`**
 
-| Param                            | Description                                                                                                           |
+| Parameter                            | Description                                                                                                        |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `account_id`                     | _Account id that will be performing the call and will be charged for gas and attached tokens / deposit._              |
-| `seed_phrase` _OR_ `private_key` | _Seed phrase OR private key of the account id above._                                                                 |
+| `account_id`                     | _Account ID that will be performing the call and will be charged for gas and attached tokens / deposit._              |
+| `seed_phrase` _OR_ `private_key` | _Seed phrase OR private key of the account ID above._                                                                 |
 | `method`                         | _A valid method for the ConnectIoT method._                                                                           |
 | `params`                         | _Arguments the method of the contract takes._                                                                         |
 
