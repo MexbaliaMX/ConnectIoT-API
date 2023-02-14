@@ -149,3 +149,8 @@ Example:
 </details>
 
 ---
+
+
+## Support
+
+Reach out via [website](https://mexbalia.com/contact.html) or send an email to [info@mexbalia.com](https://google.com)
